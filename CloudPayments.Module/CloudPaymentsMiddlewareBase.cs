@@ -20,7 +20,7 @@ namespace CloudPayments.Module
         protected readonly ITempDataDictionaryFactory _tempDataFactory;
         protected readonly IAntiforgery _antiforgery;
 
-        public CloudPaymentsMiddlewareBase(
+        protected CloudPaymentsMiddlewareBase(
             RequestDelegate next,
             IOptions<CloudPaymentsOptions> options,
             ILoggerFactory loggerFactory,
